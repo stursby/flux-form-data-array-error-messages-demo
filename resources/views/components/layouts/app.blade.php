@@ -15,7 +15,9 @@
 </head>
 
 <body>
-    {{ $slot }}
+    <div>
+        {{ $slot }}
+    </div>
 
     @fluxScripts
 </body>

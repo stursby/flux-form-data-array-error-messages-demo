@@ -11,6 +11,7 @@ export default {
     "./vendor/livewire/flux-pro/stubs/**/*.blade.php",
     "./vendor/livewire/flux/stubs/**/*.blade.php",
   ],
+  darkMode: "selector",
   theme: {
     extend: {
       fontFamily: {
