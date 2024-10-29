@@ -23,6 +23,17 @@ class Demo extends Component
 
   public array $data;
 
+  public function validationAttributes()
+  {
+    $attributes = [];
+
+    foreach ($this->fields as $field) {
+      $attributes["data.{$field['label']}"] = $field['label'];
+    }
+
+    return $attributes;
+  }
+
   public function save()
   {
     $rules = [];
